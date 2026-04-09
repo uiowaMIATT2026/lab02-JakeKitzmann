@@ -1,0 +1,10 @@
+[workspace]
+authors = ["JakeKitzmann <97077033+JakeKitzmann@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "lab02-JakeKitzmann"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
