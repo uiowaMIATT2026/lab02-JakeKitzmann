@@ -22,8 +22,5 @@ more complex like Mattes MI.
 
 Initially though, we'll need to create the images.
 
-### Creating the images
 I'll use SimpleITK to create the images. We can use a Jupyter Notebook and visualize each step,
 confirm metadata as we create them.
-
-I set both origins to (0,0), both direction cosines to 2D identity, both spacings to isotropic 1mm, and both images are stored as Float32.
