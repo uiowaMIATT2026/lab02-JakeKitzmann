@@ -12,6 +12,7 @@ Resources used:
   - Doxygen -> Transforms (no actual page but args listed)
   - https://examples.itk.org/src/registration/common/perform2dtranslationregistrationwithmeansquares/documentation
   - ^^ the big one
+- https://discourse.itk.org/t/to-v4-or-not-to-v4/7459
 
 ### Assignment
 Problem Statement: Write a program that registers two 2D images. 
@@ -47,6 +48,6 @@ area that your solution is trustworthy and appropriate.
     - Linear Interpolation for points
     - Linear Interpolation for resample filter once we get transform
     - Read images as Float32, as that's what the interpolator will want from my limited registration experience
+    - Use v4 registration, as that is recommended in the beginner discourse
 
-TODO: v4 vs normal in the registration
 
