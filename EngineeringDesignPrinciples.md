@@ -20,5 +20,7 @@ The big one will be the metric. We want something fast, since registering two ci
 is a much simpler problem than full medical images. I'd select MSE initially, rather than something
 more complex like Mattes MI.
 
-Initially though, we'll need to create the images. I'm going to use MATLAB, since 
-making a few circle images is a trivial problem there.
+Initially though, we'll need to create the images.
+
+I'll use SimpleITK to create the images. We can use a Jupyter Notebook and visualize each step,
+confirm metadata as we create them.
