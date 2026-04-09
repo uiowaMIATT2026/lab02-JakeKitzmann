@@ -1,5 +1,15 @@
 Jacob Kitzmann
-Partner: Partho Ghosh
+Initial Lab Partner: Partho Ghosh
+
+### AI/Web Use Disclosure
+This is a test of knowledge up to this point of the semester. Absolutely no AI tools were used in this assignment.
+Resources used:
+
+- SimpleITK documentation https://github.com/SimpleITK/SimpleITK
+- SimpleITKNotebooks https://github.com/InsightSoftwareConsortium/SimpleITK-Notebooks.git
+- Pixi documentation https://pixi.prefix.dev/latest/
+- ITK Documentation
+  - Doxygen -> Transforms
 
 ### Assignment
 Problem Statement: Write a program that registers two 2D images. 
@@ -13,17 +23,26 @@ Step 2: Write the algorithm
 Step 3: Write a ExperimentalResults.md file that convinces 20 other people in your research 
 area that your solution is trustworthy and appropriate.
 
-### Initial Idea
+### Engineering Design principles
 
-Our goal is to register images together. We'll need to select and optimize some parameters.
-The big one will be the metric. We want something fast, since registering two circles together
-is a much simpler problem than full medical images. I'd select MSE initially, rather than something
-more complex like Mattes MI.
+- Create test circle images using SimpleITK
+  - pixi environment with lock file
+  - 1 mm isotropic spacing
+  - identity cosine matrix
+  - Float32 data type
+  - (0,0) origin
+  - Use TransformPhysicalPointToIndex to calculate pixel coordinate of center of circle
+  - For each pixel of the image, use TransformIndexToPhysicalPoint to calculate the Euclidean distance to our center point
+  - If a point's Euclidean distance <= desired radius, we should make it a 1, otherwise we don't edit as default is zero
+  - Output images as NIfTI to preserve metadata
 
-Initially though, we'll need to create the images.
+- Registration
+    - Mean Squared Error Metric
+    - Full sampling (small images so high accuracy won't be expensive)
+    - Similarity2D Transform 
+    - Gradient Descent optimizer
+      - LR TBD
+    - Linear Interpolation for points
+    - Linear Interpolation for resample filter once we get transform
+    - Read images as Float32, as that's what the interpolator will want from my limited registration experience
 
-### Creating the images
-I'll use SimpleITK to create the images. We can use a Jupyter Notebook and visualize each step,
-confirm metadata as we create them.
-
-I set both origins to (0,0), both direction cosines to 2D identity, both spacings to isotropic 1mm, and both images are stored as Float32.
