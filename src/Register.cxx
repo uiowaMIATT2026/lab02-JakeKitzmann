@@ -16,8 +16,8 @@ int main(int argc, const char * argv[]) {
   constexpr unsigned int Dimension = 2;
   using ImageType = itk::Image<PixelType, Dimension>;
 
-  if (argc != 3) {
-    std::cerr << "Usage: " << argv[0] << " <fixed image> <moving image>" << std::endl;
+  if (argc != 4) {
+    std::cerr << "Usage: " << argv[0] << " <fixed image path> <moving image path> <output path>" << std::endl;
     return EXIT_FAILURE;
   }
 
@@ -98,5 +98,16 @@ int main(int argc, const char * argv[]) {
   std::cout << " Iterations    = " << numberOfIterations << std::endl;
   std::cout << " Metric value  = " << bestValue << std::endl;
 
+  // apply transformation to moving image
+  using ResampleFilterType = itk::ResampleImageFilter<ImageType, ImageType>;
+  auto resampler = ResampleFilterType::New();
+  resampler->SetInput(movingImage);
+  resampler->SetTransform(transform);
+  resampler->SetUseReferenceImage(true);
+  resampler->SetReferenceImage(fixedImage);
+  resampler->SetDefaultPixelValue(100);
+
+  // don't need to cast here because I chose to output as Float32
+  itk::WriteImage(resampler->GetOutput(), argv[3]);
   return EXIT_SUCCESS;
 }
