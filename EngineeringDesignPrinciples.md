@@ -52,7 +52,7 @@ area that your solution is trustworthy and appropriate.
  
   ### Initial Results
  
-    - <img width="781" height="412" alt="Screenshot 2026-04-10 at 8 47 37 AM" src="https://github.com/user-attachments/assets/59da589d-6249-4fe6-ae57-b9f12320794f" />
+<img width="781" height="412" alt="Screenshot 2026-04-10 at 8 47 37 AM" src="https://github.com/user-attachments/assets/59da589d-6249-4fe6-ae57-b9f12320794f" />
 
 Well that didn't work. I skipped the last few steps of the tutorial, so that's the first place I'll look.
 
@@ -63,10 +63,12 @@ and have a RMSE of ~ 0.05.
 
 ### Registered images below.
 
-<img width="1038" height="512" alt="Screenshot 2026-04-11 at 2 16 20 PM" src="https://github.com/user-attachments/assets/0c6b6e88-cfa6-41b8-b3d6-9ec3e9962a5b" />
+<img width="1023" height="510" alt="Screenshot 2026-04-11 at 2 21 30 PM" src="https://github.com/user-attachments/assets/31d583bd-2438-4186-977a-084650ea765e" />
+
 
 ### Difference image between images below.
 
-<img width="466" height="365" alt="Screenshot 2026-04-11 at 2 18 02 PM" src="https://github.com/user-attachments/assets/1f4a75ed-0438-4219-bcd3-00584babad83" />
+<img width="457" height="368" alt="Screenshot 2026-04-11 at 2 20 31 PM" src="https://github.com/user-attachments/assets/0fc8cc10-9c50-4733-b66c-2df189ca0f8e" />
+
 
 
