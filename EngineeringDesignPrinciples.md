@@ -49,5 +49,12 @@ area that your solution is trustworthy and appropriate.
     - Linear Interpolation for resample filter once we get transform
     - Read images as Float32, as that's what the interpolator will want from my limited registration experience
     - Use v4 registration, as that is recommended in the beginner discourse
+ 
+  ### Initial Results
+ 
+    - <img width="781" height="412" alt="Screenshot 2026-04-10 at 8 47 37 AM" src="https://github.com/user-attachments/assets/59da589d-6249-4fe6-ae57-b9f12320794f" />
+
+Well that didn't work. I skipped the last few steps of the tutorial, so that's the first place I'll look.
+
 
 

@@ -44,3 +44,8 @@
 !.pixi/config.toml
 
 *.idea*
+
+# images
+*.nii.gz
+*.dcm
+*.nrrd
