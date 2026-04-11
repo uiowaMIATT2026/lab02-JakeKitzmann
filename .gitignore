@@ -45,6 +45,8 @@
 
 *.idea*
 
+*data/*
+
 # images
 *.nii.gz
 *.dcm
