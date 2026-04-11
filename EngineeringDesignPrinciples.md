@@ -1,5 +1,5 @@
-Jacob Kitzmann
-Initial Lab Partner: Partho Ghosh
+
+# Engineering Design Principles - Jake Kitzmann
 
 ### AI/Web Use Disclosure
 This is a test of knowledge up to this point of the semester. Absolutely no AI tools were used in this assignment.
