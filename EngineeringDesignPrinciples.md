@@ -63,7 +63,8 @@ and have a RMSE of ~ 0.05.
 
 ### Registered images below.
 
-<img width="1038" height="512" alt="Screenshot 2026-04-11 at 2 16 20 PM" src="https://github.com/user-attachments/assets/0c6b6e88-cfa6-41b8-b3d6-9ec3e9962a5b" />
+<img width="1023" height="510" alt="Screenshot 2026-04-11 at 2 21 30 PM" src="https://github.com/user-attachments/assets/31d583bd-2438-4186-977a-084650ea765e" />
+
 
 ### Difference image between images below.
 
