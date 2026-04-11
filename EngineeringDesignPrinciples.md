@@ -61,3 +61,11 @@ First thing I'll do is use a translation transform, and see if that keeps the ci
 Oh -- sick. The translation transform seems to have registered them perfectly. They look almost perfectly aligned in my check_circles.ipynb,
 and have a RMSE of ~ 0.05.
 
+Registered images below.
+
+<img width="1038" height="512" alt="Screenshot 2026-04-11 at 2 16 20 PM" src="https://github.com/user-attachments/assets/0c6b6e88-cfa6-41b8-b3d6-9ec3e9962a5b" />
+
+Difference image between images below.
+<img width="466" height="365" alt="Screenshot 2026-04-11 at 2 18 02 PM" src="https://github.com/user-attachments/assets/1f4a75ed-0438-4219-bcd3-00584babad83" />
+
+
