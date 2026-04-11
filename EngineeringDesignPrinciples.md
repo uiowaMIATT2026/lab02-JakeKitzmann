@@ -67,6 +67,7 @@ and have a RMSE of ~ 0.05.
 
 ### Difference image between images below.
 
-<img width="466" height="365" alt="Screenshot 2026-04-11 at 2 18 02 PM" src="https://github.com/user-attachments/assets/1f4a75ed-0438-4219-bcd3-00584babad83" />
+<img width="457" height="368" alt="Screenshot 2026-04-11 at 2 20 31 PM" src="https://github.com/user-attachments/assets/0fc8cc10-9c50-4733-b66c-2df189ca0f8e" />
+
 
 
