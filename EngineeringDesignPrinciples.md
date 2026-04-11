@@ -58,3 +58,6 @@ Well that didn't work. I skipped the last few steps of the tutorial, so that's t
 
 First thing I'll do is use a translation transform, and see if that keeps the circle from warping into the weird square shape.
 
+Oh -- sick. The translation transform seems to have registered them perfectly. They look almost perfectly aligned in my check_circles.ipynb,
+and have a RMSE of ~ 0.05.
+

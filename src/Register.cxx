@@ -3,6 +3,7 @@
 #include <itkImageFileReader.h>
 #include <itkImageFileWriter.h>
 #include "itkSimilarity2DTransform.h"
+#include "itkTranslationTransform.h"
 #include "itkRegularStepGradientDescentOptimizerv4.h"
 #include "itkMeanSquaresImageToImageMetricv4.h"
 #include "itkImageRegistrationMethodv4.h"
@@ -25,7 +26,7 @@ int main(int argc, const char * argv[]) {
   auto movingImage = itk::ReadImage<ImageType>(argv[2]);
 
   // transform -- diverging from the tutorial because we need Similarity2D
-  using TransformType = itk::Similarity2DTransform<PixelType>;
+  using TransformType = itk::TranslationTransform<PixelType, Dimension>;
   auto initialTransform = TransformType::New();
 
   using OptimizerType = itk::RegularStepGradientDescentOptimizerv4<double>;
