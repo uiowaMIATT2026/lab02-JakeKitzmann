@@ -17,6 +17,9 @@ I focused on using the lowest run-time parameters and metrics for registration, 
 -  Registration Transform - Translation
 -  Multi-Resolution Pyramid - None (one level at full resolution, not smoothed)
 
+Images were created using SimpleITK in a Jupyter Notebook. The python packages used were tracked and locked using a Pixi environment (Version 0.66.0).
+
+
 ### Results
 
 <img width="743" height="341" alt="Screenshot 2026-04-12 at 12 19 28 PM" src="https://github.com/user-attachments/assets/9a1ed7fa-1f36-4517-8705-57ebde8d9363" />
@@ -31,6 +34,15 @@ Switching to a translation trasform with identical methods otherwise, I was able
 
 
 ### Discussion
+
+I successfully 
+
 ### References
 
 [1] - https://examples.itk.org/src/registration/common/perform2dtranslationregistrationwithmeansquares/documentation
+[2] - https://github.com/prefix-dev/pixi/
+[3] - McCormick M, Liu X, Jomier J, Marion C, Ibanez L. ITK: enabling reproducible research and open science. Front Neuroinform. 2014;8:13. Published 2014 Feb 20. doi:10.3389/fninf.2014.00013
+[4] - Yoo TS, Ackerman MJ, Lorensen WE, Schroeder W, Chalana V, Aylward S, Metaxas D, Whitaker R. Engineering and Algorithm Design for an Image Processing API: A Technical Report on ITK – The Insight Toolkit. In Proc. of Medicine Meets Virtual Reality, J. Westwood, ed., IOS Press Amsterdam pp 586-592 (2002).
+[5] - R. Beare, B. C. Lowekamp, Z. Yaniv, "Image Segmentation, Registration and Characterization in R with SimpleITK", J Stat Software, 86(8), https://doi.org/10.18637/jss.v086.i08, 2018.
+[6] - Z. Yaniv, B. C. Lowekamp, H. J. Johnson, R. Beare, "SimpleITK Image-Analysis Notebooks: a Collaborative Environment for Education and Reproducible Research", J Digit Imaging., 31(3): 290-303, https://doi.org/10.1007/s10278-017-0037-8, 2018.
+[7] - B. C. Lowekamp, D. T. Chen, L. Ibáñez, D. Blezek, "The Design of SimpleITK", Front. Neuroinform., 7:45. https://doi.org/10.3389/fninf.2013.00045, 2013.
