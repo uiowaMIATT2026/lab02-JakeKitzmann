@@ -34,7 +34,7 @@ Switching to a translation trasform with identical methods otherwise, I was able
 
 ### Discussion
 
-I successfully 
+I successfully created a registration pipeline for simple images. As these images were circles, no rotation parameters were needed. If expanding the pipeline to other applications, a rotation would likely be needed.
 
 ### References
 
